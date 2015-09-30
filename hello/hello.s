@@ -3,7 +3,7 @@ _start: .global _start
 
 @ sys_write ( fd, pstr, len)
 	@ r7=4 r0 r1 r2
-	mov r0, #1 @ fd <- stdout
+	mov r0, #0 @ fd <- stdout
 	adr r1, msg @ pstr <- *msg
 	mov r2, #14 @ len <- 14
 	mov r7, #4 @ syscall <- sys_write
