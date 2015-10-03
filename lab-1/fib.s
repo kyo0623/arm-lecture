@@ -31,11 +31,11 @@ fibonacci:
 	pop {pc}		@EPILOG
 	@ END CODE MODIFICATION
 .L3:
-	mov r0, r3			@
+	mov r0, r1			@
 	pop {pc}		@ EPILOG
 
 .L4:
-	mov r0, r3			@
+	mov r0, r2			@
 	pop {pc}		@ EPILOG
 
 	.size fibonacci, .-fibonacci
